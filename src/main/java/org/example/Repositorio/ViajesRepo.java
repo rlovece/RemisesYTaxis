@@ -14,19 +14,30 @@ public class ViajesRepo implements IRepositorio<Viaje>{
     private final File archivo = new File("src\\main\\java\\org\\example\\Archivos\\viajes.json");
     private final ObjectMapper mapper = new ObjectMapper();
 
-    private ArrayList<Viaje> listaViajes = new ArrayList<Viaje>();
+    private ArrayList<Viaje> listaViajes;
 
     @Override
-    public void cargar() {
+   /* public void cargar() {
         try {
             CollectionType collectionType =
                     mapper.getTypeFactory().constructCollectionType(ArrayList.class, Viaje.class);
             this.listaViajes = mapper.readValue(archivo, collectionType);
         } catch (IOException e){
-            //this.listaViajes = null;
+            this.listaViajes = new ArrayList<Viaje>();
+        }
+    }*/
+
+    public void cargar() {
+        try {
+            CollectionType collectionType =
+                    mapper.getTypeFactory().constructCollectionType(ArrayList.class, Viaje.class);
+            this.listaViajes = mapper.readValue(archivo, collectionType);
+            System.out.println("Cantidad de viajes cargados: " + listaViajes.size());
+        } catch (IOException e){
+            System.out.println("Error al cargar el archivo: " + e.getMessage());
+            this.listaViajes = new ArrayList<>(); // Opcional: Crear una lista vacía en caso de error
         }
     }
-
     @Override
     public void guardar() {
         try {

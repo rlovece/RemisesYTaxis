@@ -46,4 +46,10 @@
   "apellido" : "Lopez",
   "telefono" : 32913282,
   "direccion" : "Calle 1 2929"
+}, {
+  "id" : 111222337,
+  "nombre" : "Pedro",
+  "apellido" : "Alvarez",
+  "telefono" : 2133234523,
+  "direccion" : "calle 3 439"
 } ]
