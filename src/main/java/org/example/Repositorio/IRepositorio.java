@@ -1,12 +1,13 @@
 package org.example.Repositorio;
 
-import java.util.List;
+import java.util.ArrayList;
 
 public interface IRepositorio <T>{
+
     void cargar();
     void guardar();
-    List<T> listar();
+    ArrayList<T> listar();
     void agregar(T... objeto);
-    void eliminar(int id);
-    void modificar(int id);
+    void eliminar(String id);
+    void modificar(String id);
 }

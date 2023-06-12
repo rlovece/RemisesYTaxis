@@ -29,4 +29,20 @@ public class Remis extends Vehiculo implements Serializable {
     }
 
     //endregion
+    @Override
+    public void modificar() {
+        this.tarifaCuadra = EntradaSalida.leerInt("El único atributo a modificar es tarifa por cuadra" +
+                "\n Si desea hacer otro cambio, deberá elimiar el remis, y volver a cargarlo." +
+                "\n Ingrese tarifa por cuadra: ");
+    }
+
+    @Override
+    public String toString() {
+        return "\nRemis: " +patente +
+                ", Estado: " + estado +
+                ", TarifaCuadra: " + tarifaCuadra +
+                ", Marca:'" + marca +
+                ", Modelo:'" + modelo +
+                ", Combustible: " + tipoCombustible;
+    }
 }

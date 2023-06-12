@@ -65,9 +65,26 @@ public abstract class Vehiculo {
 
     //endregion
 
+    //region equal y hashcode
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Vehiculo vehiculo = (Vehiculo) o;
+        return patente.equals(vehiculo.patente);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(patente);
+    }
+
+    //endregion
+
     public void viajando (){
         this.estado = Estados.OCUPADO;
     }
 
+    abstract void modificar();
 
 }

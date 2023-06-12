@@ -1,5 +1,6 @@
 package org.example.Clases;
 
+import javax.swing.*;
 import java.io.Serializable;
 
 public class Taxi extends Vehiculo implements Serializable {
@@ -49,4 +50,23 @@ public class Taxi extends Vehiculo implements Serializable {
 
     //endregion
 
+
+    @Override
+    void modificar() {
+        String msj = "\n\n Sólo es posible modificar, precio bajada Bandera \n y Precio por km \n\n";
+        JOptionPane.showMessageDialog(null, msj,"Modificar Taxi", JOptionPane.INFORMATION_MESSAGE);
+        this.bajadaBandera = EntradaSalida.leerInt("Ingrese valor bajada vandera: ");
+        this.precioKilometro = EntradaSalida.leerInt("Ingrese precio por km");
+    }
+
+    @Override
+    public String toString() {
+        return "\nRemis: " +patente +
+                ", Estado: " + estado +
+                ", Bajada de Bandera: $" + bajadaBandera +
+                ", Precio km: $" + precioKilometro +
+                ", Marca:'" + marca +
+                ", Modelo:'" + modelo +
+                ", Combustible: " + tipoCombustible;
+    }
 }
