@@ -87,10 +87,7 @@ public class Cliente implements Serializable {
     public int hashCode() {
         return Objects.hash(id);
     }
-
-
     //endregion
-
 
     @Override
     public String toString() {

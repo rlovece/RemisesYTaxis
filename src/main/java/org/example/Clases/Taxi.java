@@ -3,9 +3,9 @@ package org.example.Clases;
 import javax.swing.*;
 import java.io.Serializable;
 
-public class Taxi extends Vehiculo implements Serializable {
+public class Taxi extends Vehiculo {
 
-    private static final long serialVersionUID = 1234567891111111111L;
+    //private static final long serialVersionUID = 1234567891111111111L;
     private transient float km =0;
 
     private int bajadaBandera;
@@ -52,11 +52,17 @@ public class Taxi extends Vehiculo implements Serializable {
 
 
     @Override
-    void modificar() {
+    public void modificar() {
         String msj = "\n\n Sólo es posible modificar, precio bajada Bandera \n y Precio por km \n\n";
         JOptionPane.showMessageDialog(null, msj,"Modificar Taxi", JOptionPane.INFORMATION_MESSAGE);
         this.bajadaBandera = EntradaSalida.leerInt("Ingrese valor bajada vandera: ");
         this.precioKilometro = EntradaSalida.leerInt("Ingrese precio por km");
+    }
+
+    @Override
+    double costoViaje(double km) {
+
+        return (this.bajadaBandera + km * this.precioKilometro );
     }
 
     @Override

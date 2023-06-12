@@ -81,6 +81,15 @@ public class ClienteRepo implements IRepositorio<Cliente>{
         }
 
         guardar();
-
+    }
+    @Override
+    public Cliente buscar(String id) throws InexistenteException{
+        cargar();
+        for(Cliente cliente: this.listaClientes){
+            if(String.valueOf(cliente.getId()).equals(id)){
+                return cliente;
+            }
+        }
+        throw new InexistenteException("Cliente inexistente");
     }
 }

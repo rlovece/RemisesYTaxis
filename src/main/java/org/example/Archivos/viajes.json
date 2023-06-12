@@ -1,0 +1,23 @@
+[ {
+  "id" : 0,
+  "vehiculo" : {
+    "marca" : "Renault",
+    "modelo" : "Logan",
+    "tipoCombustible" : "Gas",
+    "patente" : "AA234",
+    "bajadaBandera" : 600,
+    "precioKilometro" : 100,
+    "km" : 0.0,
+    "estado" : "OCUPADO"
+  },
+  "cliente" : {
+    "id" : 5362912,
+    "nombre" : "Manuel",
+    "apellido" : "Lopez",
+    "telefono" : 32913282,
+    "direccion" : "Calle 1 2929"
+  },
+  "fecha" : "21/2",
+  "cantKm" : 6,
+  "costo" : 6.0
+} ]

@@ -87,4 +87,5 @@ public abstract class Vehiculo {
 
     abstract void modificar();
 
+    abstract double costoViaje(double km);
 }

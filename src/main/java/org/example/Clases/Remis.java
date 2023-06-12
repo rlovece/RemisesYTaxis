@@ -37,6 +37,11 @@ public class Remis extends Vehiculo implements Serializable {
     }
 
     @Override
+    double costoViaje(double km) {
+        return (this.tarifaCuadra*0.1*km);
+    }
+
+    @Override
     public String toString() {
         return "\nRemis: " +patente +
                 ", Estado: " + estado +

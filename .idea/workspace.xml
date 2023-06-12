@@ -5,19 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="509fe98d-d822-42d2-b28d-31110ae8db4a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Clases/EntradaSalida.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Repositorio/ClienteRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Repositorio/RemisRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Repositorio/TaxiRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Archivos/viajes.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ClasesGestion/ClienteGestion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Repositorio/InexistenteException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Repositorio/ViajesRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Archivos/clientes.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Archivos/clientes.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Archivos/taxis.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Archivos/taxis.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Clases/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Clases/Cliente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Clases/Remis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Clases/Remis.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Clases/Taxi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Clases/Taxi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Clases/Vehiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Clases/Vehiculo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Clases/Viaje.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Clases/Viaje.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Repositorio/ClienteRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Repositorio/ClienteRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Repositorio/IRepositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Repositorio/IRepositorio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Repositorio/RemisRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Repositorio/RemisRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Repositorio/TaxiRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Repositorio/TaxiRepo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,21 +59,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Ruth/Prog3/Practica Parcial/RemisesYTaxis",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Ruth/Prog3/Practica Parcial/RemisesYTaxis&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.example.ClasesGestion" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -81,6 +91,7 @@
       <workItem from="1686492551990" duration="4358000" />
       <workItem from="1686519840801" duration="352000" />
       <workItem from="1686520210172" duration="8029000" />
+      <workItem from="1686537811181" duration="12269000" />
     </task>
     <servers />
   </component>

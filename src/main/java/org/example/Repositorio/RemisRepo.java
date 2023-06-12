@@ -71,4 +71,14 @@ public class RemisRepo implements IRepositorio<Remis>{
         }
         guardar();
     }
+
+    @Override
+    public Remis buscar(String patente) throws InexistenteException {
+        for (Remis remis: this.listaRemises) {
+            if (remis.getPatente().equals(patente)){
+                return remis;
+            }
+        }
+        throw new InexistenteException("Remis inexistente");
+    }
 }
